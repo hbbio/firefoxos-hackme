@@ -1,8 +1,8 @@
 
 function installMe() {
   var req = navigator.mozApps.install(document.location.protocol + '//' +
-                                      document.location.host + '//' +
-                                      'firefoxos-hackme/resources/manifest.webapp');
+                                      document.location.host + '/' +
+                                      'resources/manifest.webapp');
   req.onsuccess = function onsuccess() {
     console.log('Yay! \o/');
   };
